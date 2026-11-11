@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>System Account Request Form</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 500px; margin: 40px auto; padding: 20px; }
+    label { display: block; margin-top: 15px; font-weight: bold; }
+    input, textarea, button { width: 100%; padding: 10px; margin-top: 5px; box-sizing: border-box; }
+    button { background-color: #2ea44f; color: white; border: none; font-size: 16px; cursor: pointer; margin-top: 20px; }
+    button:hover { background-color: #2c974b; }
+  </style>
+</head>
+<body>
+
+  <h2>System Account Request Form</h2>
+  <p>Please fill in your details below and click submit.</p>
+
+  <form action="https://web3forms.com" method="POST">
+    <input type="hidden" name="access_key" value="97684f44-6e6b-4032-954b-39d712a0e84b">
+
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Account Request Details</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Submit Request</button>
+  </form>
+
+</body>
+</html>
